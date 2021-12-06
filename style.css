@@ -656,7 +656,7 @@ p {
   /* Project */
   #projects .project-item {
     flex-direction: row;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
     animation-name: fadeInLeft;
   }
 
