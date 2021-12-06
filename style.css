@@ -1,4 +1,5 @@
-@import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
+/* @import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap"; */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +7,7 @@
 }
 html {
   font-size: 10px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
 a {
@@ -44,7 +45,15 @@ p {
 .section-title span {
   color: rgb(255, 166, 0);
 }
+.section-title strong {
+  font-weight: 900;
+}
 
+.section-title i {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 166, 0);
+  text-underline-offset: 0.2em;
+}
 .cta {
   display: inline-block;
   padding: 10px 30px;
@@ -339,7 +348,8 @@ p {
 }
 
 #products .product-item:hover {
-  transform: rotate(-10deg) scale(1.2);
+  transform: rotate(-8deg) scale(1.2);
+  z-index: 2;
 }
 /* End products Section */
 
@@ -383,11 +393,14 @@ p {
 #projects .project-info h1 {
   font-size: 4rem;
   font-weight: 500;
+  color: rgb(255, 166, 0);
+  text-transform: uppercase;
 }
 #projects .project-info h2 {
   font-size: 1.8rem;
   font-weight: 500;
   margin-top: 10px;
+  text-transform: capitalize;
 }
 #projects .project-info p {
   color: white;
@@ -585,6 +598,26 @@ p {
     font-weight: 500;
   }
 }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0.3;
+    transform: translateX(8%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0.3;
+    transform: translateX(-8%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* End Keyframes */
 
 /* Media Query For Tablet */
@@ -613,9 +646,29 @@ p {
   /* Project */
   #projects .project-item {
     flex-direction: row;
+    animation-timing-function: ease-in-out;
+    animation-name: fadeInLeft;
   }
-  #projects .project-item:nth-child(even) {
+
+  #projects .project-item:nth-child(1) {
+    animation-duration: 1s;
+  }
+  #projects .project-item:nth-child(2) {
+    animation-duration: 1200ms;
+  }
+  #projects .project-item:nth-child(3) {
+    animation-duration: 1400ms;
+  }
+  #projects .project-item:nth-child(4) {
+    animation-duration: 1600ms;
+  }
+  #projects .project-item:nth-child(5) {
+    animation-duration: 1800ms;
+  }
+
+  #projects .project-item:nth-child(odd) {
     flex-direction: row-reverse;
+    animation-name: fadeInRight;
   }
   #projects .project-item {
     height: 400px;
