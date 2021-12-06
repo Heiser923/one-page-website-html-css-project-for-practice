@@ -351,6 +351,11 @@ p {
   transform: rotate(-8deg) scale(1.2);
   z-index: 2;
 }
+
+.about.container:hover .about-img {
+  transform: rotate(-5deg);
+  transition: all 400ms linear;
+}
 /* End products Section */
 
 /* Projects section */
@@ -465,6 +470,10 @@ p {
   position: relative;
   border: 10px solid white;
 }
+
+#about .col-left .about-img img {
+  border-radius: 10px;
+}
 #about .col-left .about-img::after {
   content: "";
   position: absolute;
@@ -474,6 +483,7 @@ p {
   width: 98%;
   border: 7px solid rgb(255, 166, 0);
   z-index: -1;
+  border-radius: 10px;
 }
 
 #about .col-right .cta:hover {
