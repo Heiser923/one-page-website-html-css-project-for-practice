@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Super Tiny Adventure - Hahuman</title>
-  <link rel="icon" href="https://static.wikia.nocookie.net/a-hat-in-time/images/2/20/Time_Rift.png">
-</head>
-
-<body>
   <!-- Header !!!!-->
   <section id="header">
     <div class="header container">
@@ -81,7 +70,7 @@
             <img src="./img/img2.jpg" alt="img">
           </div>
         </div>
-        <div class="project-item">
+        <!-- <div class="project-item">
           <div class="project-info">
             <h1>Info 3</h1>
             <h2>Dolor Sit</h2>
@@ -92,8 +81,8 @@
           <div class="project-img">
             <img src="./img/img3.jpg" alt="img">
           </div>
-        </div>
-        <div class="project-item">
+        </div> -->
+        <!-- <div class="project-item">
           <div class="project-info">
             <h1>Info 4</h1>
             <h2>Dolor Sit</h2>
@@ -114,11 +103,13 @@
               harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
           </div>
           <div class="project-img">
-            <img src="./img/img5.jpg" alt="img">
+            <img src="./img/img5.jpg" alt="img"> -->
           </div>
         </div>
       </div>
     </div>
+
+  <a href="#nogo">Read more</a>
   </section>
   <!-- End Projects Section -->
 
@@ -213,32 +204,5 @@
   </section>
   <!-- End Contact Section -->
 
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand">
-        <h1><span>H</span>ahuman</h1>
-      </div>
-      <h2>Stay contact</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
-        </div>
-      </div>
-      <p>Copyright © 2020 Hahuman. All rights reserved</p>
-    </div>
-  </section>
-  <!-- End Footer -->
-  <script src="./app.js"></script>
-</body>
 
-</html>
+ 

@@ -1,0 +1,83 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$brochard-office-normal: "Brochard Office Normal";
+$brochard-office-demi-gras: "Brochard Office Demi-Gras";
+
+/// Copy text color
+/// @type Color
+$white: #fff;
+
+$living-blue: #112f63;
+$dark-blue: #091836;
+$color-accent-1: #657ca6;
+$color-accent-2: #93c2c0;
+$color-accent-3: #bb9fae;
+$color-accent-4: #f2ece2;
+$color-accent-5: #4e9b98;
+$color-accent-6: #b0dddb;
+$color-accent-7: #976881;
+$color-accent-8: #5875ac;
+$color-accent-9: #4e6797;
+$color-accent-10: #eeebed;
+$color-accent-11: #d9e0ed;
+$color-accent-12: #f9f9fc;
+$color-accent-13: #9da3b6;
+$light-grey-2: #dbd2c0;
+
+$light-blue: #eff4fc;
+$color-sand: #faf6ee;
+$color-sand-2: #847c6d;
+$color-sand-3: #dbd2c0;
+$light-grey: #f4f6f9;
+$color-success: #39b19f;
+$color-error: #f75f87;
+$light-gray-text: #b8bcca;
+$light-blue-2: #97baff;
+$light-2: #e0e5eb;
+$light-3: #e8ebf1;
+
+$dark-blue-opaque: rgba(9, 24, 54, 0.5);
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1200px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  "small": 320px,
+  "medium": 768px,
+  "large": 1024px,
+) !default;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Big screen desktops 1350
+$screen-1350: 1350px;
+
+// Big screen desktops 1500
+$screen-1500: 1500px;
+
+// Big screen desktops 1920
+$screen-1920: 1920px;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: "/assets/" !default;
